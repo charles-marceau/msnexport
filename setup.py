@@ -6,6 +6,8 @@ with open("README.md", "r") as fh:
 setup(
     name='msnexport',
     version='0.1',
+    license="MIT",
+    classifiers=["Programming Language :: Python :: 3.7"],
     author='Charles Marceau',
     author_email='charlesmarceau3@gmail.com',
     description='Export your old xml MSN history to pdf.',
