@@ -27,6 +27,6 @@ $ msnexport john_cena753233637775.xml myConvoWithJohn.pdf
 ## How to find your history files
 MSN history files are usually found on the following path:
 ```
-C:\Documents and Settings\YOUR_USERNAME\Documents\My received files\
+C:\Documents and Settings\%USERNAME%\Documents\My received files\
 ```
 In this folder, there should be a folder for each MSN account used on the computer. These folders contain your history files (1 file per contact).
