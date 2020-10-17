@@ -4,11 +4,12 @@ from datetime import datetime
 
 class MSNParser:
 
-    def parse_xml(self, xml_file):
+    def parse_xml(self, xml_file_path):
         messages = []
-        xml_tree = BeautifulSoup(xml_file, "lxml-xml")
-        for message_tree in xml_tree.Log.findAll("Message"):
-            messages.append(self._message_tree_to_dict(message_tree))
+        with open(xml_file_path, "r") as xml_file:
+            xml_tree = BeautifulSoup(xml_file, "lxml-xml")
+            for message_tree in xml_tree.Log.findAll("Message"):
+                messages.append(self._message_tree_to_dict(message_tree))
         return messages
 
     def _message_tree_to_dict(self, message_tree):
