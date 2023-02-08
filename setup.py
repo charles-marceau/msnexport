@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='msnexport',
-    version='0.1',
+    version='0.2',
     license="MIT",
     classifiers=["Programming Language :: Python :: 3.7"],
     author='Charles Marceau',
